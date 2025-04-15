@@ -28,6 +28,7 @@ namespace etterem
         {
             string teszta =  $"A választott főétel:{label3.Text}";
             label13.Text=teszta;
+            label17.Text=label8.Text;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -35,6 +36,7 @@ namespace etterem
 
             string teszta = $"A választott főétel:{label4.Text}";
             label13.Text = teszta;
+            label17.Text = label8.Text;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -42,18 +44,23 @@ namespace etterem
 
             string teszta = $"A választott főétel:{label5.Text}";
             label13.Text = teszta;
+            label17.Text = label8.Text;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             string koret = $"A választott köret:{label7.Text}";
             label15.Text = koret;
+            label17.Text = label8.Text;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             string koret = $"A választott köret:{label14.Text}";
             label15.Text = koret;
+            label17.Text = label8.Text+400;
         }
+
+      
     }
 }

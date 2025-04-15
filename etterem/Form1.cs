@@ -15,18 +15,20 @@ namespace etterem
         public Form1()
         {
             InitializeComponent();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string pizza = "Közepes méretű...";
-            
+
+            int osszAr = Convert.ToInt32(label17.Text);
 
             if (pizza != null)
             {
                 label13.Text = pizza ;
-                label17.Text=label5.Text ;
-               
+                label22.Text = Convert.ToString(osszAr);
+
             }
            
         }
@@ -34,13 +36,14 @@ namespace etterem
         private void button2_Click(object sender, EventArgs e)
         {
             string snackCsirke = "Snack Deal roppanós...";
-            int osszAR;
-           
+            
+
             if (snackCsirke != null)
             {
                 label14.Text = snackCsirke;
                 label18.Text=label6.Text ;
-                label22.Text=label17.Text+label18.Text+label19.Text+label20.Text ;
+
+                
             }
         }
 
@@ -63,6 +66,6 @@ namespace etterem
             etel.ShowDialog();
         }
 
-        
+       
     }
 }
