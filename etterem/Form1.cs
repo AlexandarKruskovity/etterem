@@ -15,19 +15,25 @@ namespace etterem
         public Form1()
         {
             InitializeComponent();
+            
            
         }
 
+        
+
         private void button1_Click(object sender, EventArgs e)
         {
-            string pizza = "Közepes méretű...";
+            string pizza = "Közepes méretű mézes-csípős-olasz...";
+            int osszar = 0;
+            
 
-            int osszAr = Convert.ToInt32(label17.Text);
 
             if (pizza != null)
             {
                 label13.Text = pizza ;
-                label22.Text = Convert.ToString(osszAr);
+               label17.Text=label5.Text ;
+                osszar=Convert.ToInt32(label17.Text) ;
+                label23.Text=osszar.ToString();
 
             }
            
@@ -42,7 +48,7 @@ namespace etterem
             {
                 label14.Text = snackCsirke;
                 label18.Text=label6.Text ;
-
+                 ;
                 
             }
         }
@@ -52,8 +58,9 @@ namespace etterem
             string snackHagyma = "Snack Deal Fokhagymás...";
             if (snackHagyma!=null)
             {
-                label15.Text = snackHagyma;
-                label19.Text=label7.Text ;
+                label16.Text = snackHagyma;
+                label19.Text = label7.Text;
+
 
             }
             
@@ -64,8 +71,14 @@ namespace etterem
             
             Választott_főétel etel=new Választott_főétel();
             etel.ShowDialog();
+            label20.Text = Convert.ToString(Választott_főétel.ossz);
+
+
+            label15.Text = Választott_főétel.rizs + " " + Választott_főétel.sali;
+            
+            
         }
 
-       
+      
     }
 }
