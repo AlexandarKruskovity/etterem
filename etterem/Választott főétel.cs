@@ -94,13 +94,13 @@ namespace etterem
             string koret = $"A választott köret:{label7.Text}";
             label15.Text = koret;
             label17.Text = label8.Text;
-            if (koret == label14.Text)
+            if (checkBox4.Checked) 
             {
-                rizs = label7.Text;
+                rizs = "A választott köret: Sült burgonya";
             }
             else
             {
-                rizs = "A választott köret:Sült burgonya";
+                rizs = " ";
             }
         }
 
@@ -109,6 +109,14 @@ namespace etterem
             string koret = $"A választott köret:{label14.Text}";
             label15.Text = koret;
             label17.Text = label8.Text;
+            if (checkBox5.Checked)
+            {
+                rizs = "A választorr köret: Rizs";
+            }
+            else
+            {
+                rizs = " ";
+            }
            
 
         }

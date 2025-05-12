@@ -24,7 +24,7 @@ namespace etterem
         private void button1_Click(object sender, EventArgs e)
         {
             string pizza = "Közepes méretű mézes-csípős-olasz...";
-            int osszar = 0;
+            
             
 
 
@@ -32,8 +32,8 @@ namespace etterem
             {
                 label13.Text = pizza ;
                label17.Text=label5.Text ;
-                osszar=Convert.ToInt32(label17.Text) ;
-                label23.Text=osszar.ToString();
+               
+                
 
             }
            
