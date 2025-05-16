@@ -14,7 +14,7 @@ namespace etterem
 {
     public partial class Választott_főétel : Form
     {
-        public static string ossz = "1995.00 Ft" ;
+        public static string ossz = "1995" ;
         public static string rizs = "A választott köret:Rízs" ;
         public static string sali = "A választott főétel:Zöld saláta" ;
        
@@ -26,7 +26,7 @@ namespace etterem
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            label17.Text = Convert.ToString(ossz);
+            
             
         }
 
@@ -36,7 +36,7 @@ namespace etterem
         {
             string teszta = $"A választott főétel:{label3.Text}";
             label13.Text = teszta;
-            label17.Text = label8.Text;
+            label16.Text = label8.Text;
 
             if (checkBox1.Checked)
             {
@@ -57,7 +57,7 @@ namespace etterem
 
             string teszta = $"A választott főétel:{label4.Text}";
             label13.Text = teszta;
-            label17.Text = label8.Text;
+            label16.Text = label8.Text;
             if (checkBox2.Checked)
             {
                 sali = "A választott főétel: Zöld saláta";
@@ -77,7 +77,7 @@ namespace etterem
 
             string teszta = $"A választott főétel:{label5.Text}";
             label13.Text = teszta;
-            label19.Text = label8.Text;
+            label16.Text = label8.Text;
             if (checkBox3.Checked)
             {
                 sali = "A választott főétel: Melst";
@@ -93,7 +93,7 @@ namespace etterem
         {
             string koret = $"A választott köret:{label7.Text}";
             label15.Text = koret;
-            label17.Text = label8.Text;
+            label16.Text = label8.Text;
             if (checkBox4.Checked) 
             {
                 rizs = "A választott köret: Sült burgonya";
@@ -108,7 +108,7 @@ namespace etterem
         {
             string koret = $"A választott köret:{label14.Text}";
             label15.Text = koret;
-            label17.Text = label8.Text;
+            label16.Text = label8.Text;
             if (checkBox5.Checked)
             {
                 rizs = "A választorr köret: Rizs";
@@ -117,11 +117,6 @@ namespace etterem
             {
                 rizs = " ";
             }
-           
-
-        }
-
-        
-      
+        } 
     }
 }

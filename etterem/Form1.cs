@@ -12,6 +12,7 @@ namespace etterem
 {
     public partial class Form1 : Form
     {
+        public int teljesAr = 0;
         public Form1()
         {
             InitializeComponent();
@@ -31,8 +32,9 @@ namespace etterem
             if (pizza != null)
             {
                 label13.Text = pizza ;
-               label17.Text=label5.Text ;
-               
+                label17.Text = "3845";
+                teljesAr += Convert.ToInt32(label17.Text);
+                label23.Text = teljesAr.ToString();
                 
 
             }
@@ -47,9 +49,10 @@ namespace etterem
             if (snackCsirke != null)
             {
                 label14.Text = snackCsirke;
-                label18.Text=label6.Text ;
-                 ;
-                
+                label18.Text="1245" ;
+                teljesAr += Convert.ToInt32(label18.Text);
+                label23.Text = teljesAr.ToString();
+
             }
         }
 
@@ -59,8 +62,9 @@ namespace etterem
             if (snackHagyma!=null)
             {
                 label16.Text = snackHagyma;
-                label19.Text = label7.Text;
-
+                label19.Text ="1045";
+                teljesAr += Convert.ToInt32(label19.Text);
+                label23.Text = teljesAr.ToString();
 
             }
             
@@ -72,13 +76,38 @@ namespace etterem
             Választott_főétel etel=new Választott_főétel();
             etel.ShowDialog();
             label20.Text = Convert.ToString(Választott_főétel.ossz);
-
+            teljesAr += Convert.ToInt32(label20.Text);
+            label23.Text = teljesAr.ToString();
 
             label15.Text = Választott_főétel.rizs + " " + Választott_főétel.sali;
             
             
         }
 
-      
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (label17.Text == " " && label18.Text==" "&& label19.Text==" "&& label20.Text==" ")
+            {
+                MessageBox.Show("A kosár üres nem tudsz fizetni");
+            }
+            else
+            {
+
+                MessageBox.Show("Rendelésed sikeres!");
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            label13.Text = " ";
+            label14.Text = " ";
+            label15.Text = " ";
+            label16.Text = " ";
+            label17.Text = " ";
+            label18.Text = " "; 
+            label19.Text = " "; 
+            label20.Text = " ";
+            label23.Text=" ";
+        }
     }
 }
