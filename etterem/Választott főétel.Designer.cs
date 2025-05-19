@@ -63,12 +63,12 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -387,9 +387,9 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(608, 117);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(60, 17);
+            this.checkBox1.Size = new System.Drawing.Size(92, 17);
             this.checkBox1.TabIndex = 62;
-            this.checkBox1.Text = "Biztos?";
+            this.checkBox1.Text = "Megerősíted?";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // checkBox2
@@ -397,9 +397,9 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(608, 210);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(70, 17);
+            this.checkBox2.Size = new System.Drawing.Size(92, 17);
             this.checkBox2.TabIndex = 63;
-            this.checkBox2.Text = "Miert ne?";
+            this.checkBox2.Text = "Megerősíted?";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -407,9 +407,9 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(608, 298);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(91, 17);
+            this.checkBox3.Size = new System.Drawing.Size(92, 17);
             this.checkBox3.TabIndex = 64;
-            this.checkBox3.Text = "Fogyózz dagi!";
+            this.checkBox3.Text = "Megerősíted?";
             this.checkBox3.ThreeState = true;
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
@@ -425,6 +425,14 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Kosár";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(190, 22);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(0, 13);
+            this.label16.TabIndex = 2;
             // 
             // label15
             // 
@@ -465,21 +473,13 @@
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(328, 298);
+            this.checkBox5.Location = new System.Drawing.Point(333, 298);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(58, 17);
+            this.checkBox5.Size = new System.Drawing.Size(92, 17);
             this.checkBox5.TabIndex = 66;
-            this.checkBox5.Text = "100%?";
+            this.checkBox5.Text = "Megerősíted?";
             this.checkBox5.ThreeState = true;
             this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(190, 22);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(0, 13);
-            this.label16.TabIndex = 2;
             // 
             // Választott_főétel
             // 

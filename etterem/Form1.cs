@@ -13,6 +13,8 @@ namespace etterem
     public partial class Form1 : Form
     {
         public int teljesAr = 0;
+        public Timer timer=new Timer();
+
         public Form1()
         {
             InitializeComponent();
@@ -25,7 +27,7 @@ namespace etterem
         private void button1_Click(object sender, EventArgs e)
         {
             string pizza = "Közepes méretű mézes-csípős-olasz...";
-            
+           
             
 
 
@@ -35,7 +37,7 @@ namespace etterem
                 label17.Text = "3845";
                 teljesAr += Convert.ToInt32(label17.Text);
                 label23.Text = teljesAr.ToString();
-                
+                timer.Enabled = true;
 
             }
            
@@ -95,6 +97,7 @@ namespace etterem
 
                 MessageBox.Show("Rendelésed sikeres!");
             }
+            this.Close();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -108,6 +111,8 @@ namespace etterem
             label19.Text = " "; 
             label20.Text = " ";
             label23.Text=" ";
+            teljesAr = 0;
+          
         }
     }
 }
