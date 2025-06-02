@@ -95,8 +95,9 @@ namespace etterem
             else
             {
 
-                MessageBox.Show("Rendelésed sikeres!");
+                MessageBox.Show("Rendelésed sikeres!Átveheted éttermünkbrn:)");
             }
+            
             this.Close();
         }
 

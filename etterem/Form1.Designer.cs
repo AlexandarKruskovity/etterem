@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -73,7 +72,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -324,7 +322,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(404, 22);
+            this.label12.Location = new System.Drawing.Point(355, 22);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(109, 65);
             this.label12.TabIndex = 31;
@@ -334,7 +332,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(298, 24);
+            this.label11.Location = new System.Drawing.Point(205, 22);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(93, 65);
             this.label11.TabIndex = 30;
@@ -343,7 +341,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(166, 24);
+            this.label10.Location = new System.Drawing.Point(37, 24);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(116, 65);
             this.label10.TabIndex = 29;
@@ -354,9 +352,8 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(24, 24);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(121, 52);
+            this.label9.Size = new System.Drawing.Size(0, 13);
             this.label9.TabIndex = 28;
-            this.label9.Text = "Menü:\r\nHázhozszállításos menü\r\nElviteles menü\r\n\r\n";
             // 
             // menuStrip1
             // 
@@ -611,7 +608,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Timer timer1;
     }
 }
 
